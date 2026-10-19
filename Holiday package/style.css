@@ -1,0 +1,262 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body{
+    background-color: #d9f3f4;
+    color: black;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Hero video background, overlay, and centered content */
+.hero-video{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    overflow: hidden;
+    color: white;
+    background-color: #123b39;
+}
+
+.hero-video-media,
+.hero-video-overlay{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-video-media{
+    object-fit: cover;
+}
+
+.hero-video-overlay{
+    background: rgba(0, 0, 0, 0.42);
+}
+
+.hero-video-content{
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-video-content h1{
+    font-size: clamp(2.25rem, 5vw, 4.5rem);
+    font-weight: 700;
+}
+
+.hero-video-content p{
+    max-width: 42rem;
+    margin: 1rem auto 1.5rem;
+    font-size: 1.2rem;
+}
+
+/* Shared brand button and heading styles */
+.btn-brand{
+    color: #fff;
+    background-color: #097c87;
+    border-color: #097c87;
+    min-height: 44px;
+}
+
+.btn-brand:hover,
+.btn-brand:focus-visible{
+    color: #fff;
+    background-color: #076872;
+    border-color: #076872;
+}
+
+.brand-heading{
+    color: #a94f1c;
+}
+
+section h2.brand-heading{
+    color: #097c87;
+}
+
+.border-brand{
+    border: 2px solid #00cec8;
+}
+
+/* Package, pricing, and testimonial card appearance */
+.package-card,
+.pricing-card{
+    background-color: #fff7df;
+}
+
+.section-sage{
+    background-color: #d8ead9;
+}
+
+.testimonial-card{
+    min-height: 220px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.testimonial-card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.testimonial-card-noma{
+    background-image: url("Noma.jpeg");
+}
+
+.testimonial-card-botshelo{
+    background-image: url("Botshelo.jpeg");
+}
+
+.testimonial-card-thanda{
+    background-image: url("Thanda.jpeg");
+}
+
+/* Subtle hover and scroll-reveal motion */
+.package-card,
+.pricing-card,
+.testimonial-card{
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.package-card:hover,
+.pricing-card:hover,
+.testimonial-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.16) !important;
+}
+
+body.motion-ready .reveal{
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+body.motion-ready .reveal.is-visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive hero sizing and button layout */
+@media (max-width: 768px){
+    .hero-video{
+        min-height: 75vh;
+    }
+
+    .hero-video-content p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575.98px){
+    .hero-video-content .btn{
+        display: block;
+        width: 100%;
+    }
+}
+
+.brand-color{
+    color: #A97DA4; /* turquoise */
+}
+
+/* Navigation bar and link appearance */
+.navbar{
+    background-color: whitesmoke;
+    transition: background-color 0.25s ease;
+}
+
+.navbar .nav-link{
+    color: #000;
+}
+
+.nav-link{
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+    color: black;
+}
+
+/* Alternate dark palette for page sections, controls, and navigation */
+html[data-bs-theme="dark"] body{
+    background-color: #152d32;
+    color: #f1f5f4;
+}
+
+html[data-bs-theme="dark"] .navbar{
+    background-color: #193a40;
+}
+
+html[data-bs-theme="dark"] .navbar-brand,
+html[data-bs-theme="dark"] .navbar .nav-link{
+    color: #f1f5f4;
+}
+
+html[data-bs-theme="dark"] .navbar-toggler{
+    border-color: #f1f5f4;
+}
+
+html[data-bs-theme="dark"] .navbar-toggler-icon{
+    filter: invert(1);
+}
+
+html[data-bs-theme="dark"] .section-sage{
+    background-color: #203b39;
+}
+
+html[data-bs-theme="dark"] .package-card,
+html[data-bs-theme="dark"] .pricing-card{
+    background-color: #293c3d;
+    color: #f1f5f4 !important;
+}
+
+html[data-bs-theme="dark"] .brand-heading{
+    color: #71d7dc;
+}
+
+html[data-bs-theme="dark"] .form-control{
+    color: #f1f5f4;
+    background-color: #293c3d;
+    border-color: #718487;
+}
+
+html[data-bs-theme="dark"] .form-control::placeholder{
+    color: #c0cecf;
+}
+
+html[data-bs-theme="dark"] .form-control:focus{
+    color: #f1f5f4;
+}
+
+html[data-bs-theme="dark"] .footer{
+    background-color: #10252a;
+    color: #f1f5f4;
+}
+
+/* Footer layout and branding */
+.footer {
+    background: #123b39;
+    color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after{
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NomTravels holiday package</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Site navigation and brand -->
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+
+    
+    <a class="navbar-brand d-inline-flex align-items-center gap-2" href="https://github.com/NomalangaS" target="_blank" rel="noopener noreferrer">
+      <img src="NomTravels branding.jpg.jpeg" alt="" height="100" class="rounded-circle">
+      <span class="d-flex flex-column lh-sm">
+        <span><span class="brand-color">Nom</span>Travels</span>
+        <small class="d-block fs-6 text-body-secondary">Your gateway to unforgettable adventures.</small>
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#packages">Packages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacts">Contacts</a>
+        </li>
+        
+      </ul>
+      <button id="theme-toggle" class="btn btn-brand btn-sm d-inline-flex align-items-center justify-content-center fw-semibold ms-lg-3 mt-2 mt-lg-0" type="button" aria-pressed="false">
+        Dark mode
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero section: background video and primary call to action -->
+<section id="home" class="hero-video">
+    <video class="hero-video-media" muted loop playsinline preload="metadata" poster="The Jetty.jpg.jpg" aria-hidden="true">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-overlay"></div>
+    <div class="container hero-video-content text-center">
+        <h1>Discover Namibia with NomTravels</h1>
+        <p>From desert adventures to unforgettable coastal escapes, find your next journey with us.</p>
+        <a href="#packages" class="btn btn-brand d-inline-flex align-items-center justify-content-center fw-semibold px-4 py-2">Explore our packages</a>
+    </div>
+</section>
+
+<!-- Travel packages and links to explore each service -->
+<section id="packages" class="py-5 ">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="brand-heading">Our packages</h2>
+            <p>Explore NomTravels amazing travel experiences in Namibia</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card package-card text-dark h-100 reveal">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5>Holiday Package</h5>
+                        <p>Enjoy affordable and luxurious holiday packages with NomTravels. Each package consists of flight, accommodation, touring and activities. We have packages readily made for you to enjoy an admin free experience.</p>
+                        <a href="https://www.safaribookings.com/tours/t101186" class="btn btn-brand d-inline-flex align-items-center justify-content-center fw-semibold px-4 py-2 mt-auto">Explore holiday packages</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card package-card text-dark h-100 reveal">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5>Accommodation</h5>
+                        <p>We help you find the best places to stay according to your preferences and budget. Either you are looking for an affordable or luxury stay with the beautiful landscapes of Namibia including the iconic Namib Desert and ocean, we have you covered.</p>
+                        <a href="https://www.airbnb.co.za/s/homes?pinned_listings%5B%5D=43301412&pinned_reason=SEO&photo_id=1266377545" class="btn btn-brand d-inline-flex align-items-center justify-content-center fw-semibold px-4 py-2 mt-auto">Browse accommodation</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card package-card text-dark h-100 reveal">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5>Adventure Tours</h5>
+                        <p>Experience exciting tours and activities.Get to enjoy the breathtaking landscapes and rich culture of Namibia.From wildlife safaris to desert adventures and cultural experiences, we have something for everyone.</p>
+                        <a href="https://www.mola-namibia.com/experiences/?gad_source=1&gad_campaignid=23608546457&gbraid=0AAAABB4fzWV_Uyx-bgGAaOb8vtiht4Wfn&gclid=CjwKCAjw_9bWBhBGEiwAomyTImsS-D-Km2LnzkfcY1K3ueIv1DKXySOvPn6URh1SPEXHkUhnJPn1-xoCwewQAvD_BwE" class="btn btn-brand d-inline-flex align-items-center justify-content-center fw-semibold px-4 py-2 mt-auto">Explore adventure tours</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Traveler testimonials displayed over customer photos -->
+<section id="testimonials" class="py-5 section-sage">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="brand-heading">Testimonials</h2>
+            <p>What our travelers say about us!</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card testimonial-card testimonial-card-noma shadow h-100 reveal">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Noma.S</h5>
+                        <p class="card-text">
+                            "The Namibian tour was absolutely amazing. Everything was well organized! I got to enjoy the beautiful landscapes and rich culture of Namibia. Highly recommend NomTravels! "
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card testimonial-card testimonial-card-botshelo shadow h-100 reveal">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Botshelo.M</h5>
+                        <p class="card-text">
+                            "Great service and beautiful destinations. I highly recommend NomTravels."
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card testimonial-card testimonial-card-thanda shadow h-100 reveal">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Thanda.T</h5>
+                        <p class="card-text">
+                            "A wonderful hassle free experience from start to finish. I'll definitely book again with NomTravels!"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing tiers and booking links -->
+<section id="pricing" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="brand-heading">Pricing Packages</h2>
+            <p>Choose the package that suits your adventure</p>
+        </div>
+
+        <div class="row">
+            <!-- Basic Package -->
+            <div class="col-md-4 mb-4">
+                <div class="card pricing-card text-center border-brand reveal">
+                    <div class="card-body">
+                        <h3>Basic</h3>
+                        <h4 class="brand-heading">R2,999</h4>
+                        <p>2 Nights Accommodation</p>
+                        <p>Breakfast Included</p>
+                        <p>City Tour</p>
+                        <a href="#contacts" class="btn btn-brand d-inline-flex align-items-center justify-content-center fw-semibold px-4 py-2">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Standard Package -->
+            <div class="col-md-4 mb-4">
+                <div class="card pricing-card text-center border-brand reveal">
+                    <div class="card-body">
+                        <h3>Standard</h3>
+                        <h4 class="brand-heading">R5,999</h4>
+                        <p>4 Nights Accommodation</p>
+                        <p>All Meals Included</p>
+                        <p>Adventure Activities</p>
+                        <a href="#contacts" class="btn btn-brand d-inline-flex align-items-center justify-content-center fw-semibold px-4 py-2">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Package -->
+            <div class="col-md-4 mb-4">
+                <div class="card pricing-card text-center border-brand reveal">
+                    <div class="card-body">
+                        <h3>Premium</h3>
+                        <h4 class="brand-heading">R9,999</h4>
+                        <p>7 Nights Luxury Stay</p>
+                        <p>All Meals Included</p>
+                        <p>VIP Tours & Activities</p>
+                        <a href="#contacts" class="btn btn-brand d-inline-flex align-items-center justify-content-center fw-semibold px-4 py-2">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact form for travel inquiries -->
+<section id="contacts" class="py-5 section-sage">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="brand-heading">Contact Us</h2>
+            <p>Have questions? We'd love to hear from you.</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form>
+                    <div class="mb-3">
+                        <label for="contact-name" class="form-label">Full Name</label>
+                        <input id="contact-name" name="name" type="text" class="form-control" placeholder="Enter your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="contact-email" class="form-label">Email Address</label>
+                        <input id="contact-email" name="email" type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="contact-destination" class="form-label">Destination of Interest</label>
+                        <input id="contact-destination" name="destination" type="text" class="form-control" placeholder="e.g. Namibia, Cape Town">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="contact-message" class="form-label">Message</label>
+                        <textarea id="contact-message" name="message" class="form-control" rows="5" placeholder="Type your message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-brand d-inline-flex align-items-center justify-content-center fw-semibold px-4 py-2 w-100">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer brand and copyright -->
+<footer class="text-center py-4">
+    <div class="container">
+        <a class="d-flex align-items-center justify-content-center gap-3 mb-3 text-reset text-decoration-none" href="https://github.com/NomalangaS" target="_blank" rel="noopener noreferrer">
+            <img src="NomTravels branding.jpg.jpeg" alt="" height="64" class="rounded-circle">
+            <h5 class="mb-0"><span class="brand-color">Nom</span>Travels</h5>
+        </a>
+        <p>Your gateway to unforgettable adventures.</p>
+
+        <p class="mb-0">
+            &copy; 2026 NomTravels. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
